@@ -4,18 +4,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingeniería Mecánica</title>
+    <title>Ingeniería Mecánica | Diseñar, construir, transformar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111c30;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid #263650;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #55c7ff;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #55c7ff;
+        }
+
+        .hero {
+            min-height: 520px;
+            padding: 100px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(90deg, #0b1120 15%, #102a43 100%);
+        }
+
+        .hero span {
+            color: #55c7ff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 13px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 72px);
+            line-height: 1.1;
+            margin: 20px 0;
+            max-width: 750px;
+        }
+
+        .hero p {
+            color: #c3d1e2;
+            max-width: 580px;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            width: fit-content;
+            margin-top: 30px;
+            padding: 13px 25px;
+            background: #168bd2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #55c7ff;
+        }
+
+        .description {
+            max-width: 800px;
+            color: #c3d1e2;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: #142238;
+            padding: 28px;
+            border: 1px solid #263c59;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #55c7ff;
+        }
+
+        .card h3 {
+            color: #55c7ff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #bdcadd;
+            font-size: 15px;
+        }
+
+        .technology {
+            background: #111c30;
+        }
+
+        .quote {
+            text-align: center;
+            padding: 90px 10%;
+            background: #102a43;
+        }
+
+        .quote h2 {
+            font-size: clamp(25px, 4vw, 42px);
+        }
+
+        .quote p {
+            color: #55c7ff;
+            margin-top: 15px;
+            letter-spacing: 3px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #080d18;
+            color: #8495aa;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero {
+                padding: 80px 8%;
+            }
+
+            section {
+                padding: 60px 8%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Ingeniería Mecánica</h1>
+    <header>
+        <div class="logo">INGENIERÍA MECÁNICA</div>
 
-    <h2>Diseñar, construir, transformar.</h2>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">Acerca de</a>
+            <a href="#areas">Especialidades</a>
+            <a href="#tecnologia">Tecnología</a>
+        </nav>
+    </header>
 
-    <p>
-        Me encanta la ingeniería, diseñar, construir y transformar.
-        Esta página forma parte de mi proyecto escolar de Bachillerato.
-    </p>
+    <main>
+
+        <div class="hero" id="inicio">
+            <span>Ingeniería · Innovación · Tecnología</span>
+
+            <h1>Diseñar, construir, transformar.</h1>
+
+            <p>
+                La ingeniería mecánica convierte ideas en soluciones.
+                A través de la ciencia, el diseño y la tecnología,
+                es posible crear máquinas, estructuras y sistemas
+                que transforman nuestro entorno.
+            </p>
+
+            <a href="#acerca" class="button">Explorar proyecto</a>
+        </div>
+
+        <section id="acerca">
+            <h2 class="section-title">¿Qué es la Ingeniería Mecánica?</h2>
+
+            <p class="description">
+                Es una rama de la ingeniería que utiliza principios
+                de física, matemáticas y materiales para diseñar,
+                desarrollar, fabricar y mejorar máquinas y sistemas.
+                Está presente en la industria, el transporte,
+                la manufactura y muchas otras áreas de la vida diaria.
+            </p>
+        </section>
+
+        <section id="areas">
+            <h2 class="section-title">Áreas de especialización</h2>
+
+            <p class="description">
+                La ingeniería mecánica abarca diferentes campos
+                que permiten desarrollar soluciones tecnológicas.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Diseño CAD</h3>
+                    <p>
+                        Creación y modelado de piezas y mecanismos
+                        mediante herramientas de diseño digital.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Manufactura</h3>
+                    <p>
+                        Procesos de fabricación y transformación
+                        de materiales para crear productos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Robótica</h3>
+                    <p>
+                        Desarrollo de sistemas mecánicos y
+                        automatizados capaces de realizar tareas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Automotriz</h3>
+                    <p>
+                        Estudio, diseño y funcionamiento de motores,
+                        vehículos y sus componentes.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="technology" id="tecnologia">
+            <h2 class="section-title">Tecnología e innovación</h2>
+
+            <p class="description">
+                Herramientas como la impresión 3D, el modelado
+                tridimensional y la automatización permiten llevar
+                los diseños digitales al mundo real. La innovación
+                ayuda a mejorar los procesos y crear nuevas soluciones.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Impresión 3D</h3>
+                    <p>Fabricación de objetos físicos a partir de modelos digitales.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Modelado 3D</h3>
+                    <p>Representación digital de piezas, mecanismos y estructuras.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Automatización</h3>
+                    <p>Integración de sistemas para mejorar procesos industriales.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="quote">
+            <h2>Las grandes ideas comienzan con un diseño.</h2>
+            <p>DISEÑAR · CONSTRUIR · TRANSFORMAR</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Proyecto escolar de Bachillerato</p>
+        <p>Ingeniería Mecánica | 2026</p>
+    </footer>
 
 </body>
 </html>
